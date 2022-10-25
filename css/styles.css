@@ -13,6 +13,7 @@ body {
     font-family: "Roboto", sans-serif;
     background: #FFFFFF;
     color: var(--primary-text-color);
+    margin: 0;
 }
 
 .list {
@@ -32,7 +33,10 @@ p {
 }
 
 .container {
-    Width: 1200px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 }
 
 .section {
@@ -44,19 +48,16 @@ p {
 /* header */
 
 .top {
-    width: 1200px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     border-bottom: 1px solid #ECECEC;
-    ;
 }
 
 .div-flex {
     display: flex;
     align-items: center;
-    margin-right: 0;
 }
 
 .logo-beginning {
@@ -80,12 +81,12 @@ p {
 
 .head-flex {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .head-flex .item {
     margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .head-flex .item:last-child {
@@ -132,17 +133,23 @@ p {
 /* main index */
 
 .cap {
-    padding: 200px 252px 200px 252px;
+    padding: 200px 0px;
     background-color: var(--main-background);
     text-align: center;
+    align-items: center;
 }
 
 .main-name {
-    padding-bottom: 30px;
+    display: flex;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--button-color);
@@ -166,7 +173,7 @@ p {
 
 .order-button:hover,
 .order-button:focus {
-    color: var(--primary-text-color);
+    background: #188CE8;
 }
 
 .secondary-name {
@@ -176,6 +183,10 @@ p {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.features-section {
+    padding-bottom: 0;
 }
 
 .features-flex {
@@ -287,9 +298,7 @@ p {
 .main-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 90px;
 }
-
 
 .main-flex .item {
     width: calc((100% - 6px - 30px * 2)/3);
@@ -301,6 +310,18 @@ p {
 
 .main-flex .item:nth-child(3n) {
     margin-right: 0;
+}
+
+.main-flex .item:nth-child(7n) {
+    margin-bottom: 0;
+}
+
+.main-flex .item:nth-child(8n) {
+    margin-bottom: 0;
+}
+
+.main-flex .item:nth-child(9n) {
+    margin-bottom: 0;
 }
 
 .project-name {
@@ -322,8 +343,6 @@ p {
     letter-spacing: 0.03em;
     color: var(--title-text-color);
 }
-
-
 
 .filter-button {
     font-weight: 500;
@@ -353,13 +372,15 @@ p {
 /* footer */
 
 .bottom {
-    width: 1200px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     background-color: var(--main-background);
+}
+
+.bottom .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-foot {
@@ -369,6 +390,14 @@ p {
 .footer-contacts {
     padding-top: 20px;
     font-style: normal;
+}
+
+.footer-list .item {
+    margin-bottom: 9px;
+}
+
+.footer-list .item:last-child {
+    margin-bottom: 0px;
 }
 
 .location {
